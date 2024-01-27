@@ -1,0 +1,181 @@
+ /* Main Box */
+
+.popup
+{
+  display:none;
+  background:rgba(0, 0, 0, 0.658);
+  position: absolute;
+  z-index: 155;
+  width: max-content;
+  max-width: 250px;
+  width: 150px;
+  height: max-content;
+  font-weight:bolder;
+  padding: 25px 20px 20px 20px;
+}
+
+/* Main box Height & Width */
+
+.popup
+{
+  position: absolute;
+  width: 190;
+  height: 90;
+  margin-left:2;
+  margin-top: -2%;
+  overflow: hidden;
+  top: auto;
+}
+
+/* Text Font */
+
+.popup p 
+{
+  font-size: 82%;
+  color:rgba(255, 255, 255, 0.877);
+  margin: 0;
+  padding: 4;
+}
+
+/* More Info */
+
+.popup a:visited
+{
+  color: white;
+}
+
+.popup a:hover{
+  color:blue;
+}
+
+
+
+/* Button Interface */
+
+.popup  .btn
+{
+  background:rgba(255, 255, 255, 0.836);
+  color: rgb(255, 248, 248);
+  overflow: hidden;
+  text-decoration:transparent ;
+  background: transparent;
+  cursor: pointer;
+  font-size: small;
+}
+
+/* Extra Info */
+
+.popup a
+{
+  font-size: 68%;
+ position: absolute;
+ bottom: 10;
+ padding-left: 4px;
+ text-decoration: none;
+ overflow: hidden;
+}
+/*Adjust scale of Box*/
+
+/* The Modal UI */
+
+.BoxModal 
+{
+  display:none;/*Hidden By Default*/
+  background:rgba(0, 0, 0, 0.671); /* Black w/ opacity */
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 1; /*Sit on Top */
+  width: max-content;
+  height: max-content;
+  width: 44.7%; /*width */
+  height: 15%;/*Height */
+  overflow:auto;/* if required to Scroll*/
+  margin-left: 16.5%;
+  margin-top: 7%;
+}
+
+
+.BoxModal p{
+  color:white;
+margin:0%;
+padding: 2px;
+}
+
+
+
+/* The Close Button */
+
+.close  
+{
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus 
+{
+  color: rgb(223, 24, 24);
+  text-decoration: none;
+  cursor: pointer;
+}
+.rect{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 44.7%; /* Full width */
+  height: 14%; /* Full height */
+  overflow: hidden; /* Contens Show no Required to Scroll*/
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  margin-left: 16.5%;
+  margin-top: 4%;
+}
+
+.rect h4{
+  color:rgba(255, 255, 255, 0.877);/*Text Color*/
+  text-align: center;/*Text Poistin Set Center*/
+}
+.rect p{
+  color: white;
+  text-align: center;
+  text-rendering: auto;
+  text-shadow: black
+}
+.rect span{
+  color: #8a8080;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+.rect .close:hover,.close:focus{
+  color: rgb(223, 24, 24);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (min-width:620px){
+  .popup{
+    max-height: 75px;
+    max-width: 150px;
+    top:0;
+    left: -5%;
+    padding:6;
+  }
+  .popup p{ 
+    font-size: 10px;
+    opacity: 1;
+  }
+  .popup .btn{
+    width: auto;
+  }
+  
+
+
+}
+
